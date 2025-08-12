@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Form</title>
+<style>
+body {
+    color: yellow;
+}
+h2 {
+    color: red;
+   
+}
+p.ex {
+    color: blue;
+}
+p.ex1 {
+    color: green;
+}
+fieldset {
+    border: solid orange;
+}
+.check_box {
+    color: black;
+}
+.pw {
+    color: blueviolet;
+}
+.email {
+    color: chocolate;
+}
+.kelamin {
+    color: brown;
+}
+.l {
+    color: blue;
+}
+.p {
+    color: pink;
+}
+</style>
+</head>
+<body>
+     <h2>
+        <marquee direction="right" behavior="alternate" width="100%">Demo Membuat Kontrol TEXT</marquee></h2>
+    <form>
+        <fieldset>
+            <legend>Bio Data</legend>
+       <p class="ex">Nama :</p>
+        <input type="text" name="txtNama" size="50" />
+        <br>
+<p class="kelamin">Jenis Kelamin</p>
+<input type="radio" id="Laki_Laki" name="jenis_kelamin" value="Laki_Laki">
+<div class="l"><label for="Laki_Laki">Laki ♂</div><br></label>
+<input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan">
+<label for="Perempuan"><div class="p">Perempuan ♀</div></label>
+<p class="email">Email :</p>
+<input type="email" name="email" size="50">
+ <p class="pw">Password</p>
+ <input type="password" name="password">
+ <input type="hidden" name="password">
+<br>
+       <p>Alamat :</p>
+       <input type="text" name="txtAlamat" size="50">
+       
+<br>
+        <p class="ex1"> Telepon :</p>
+        <input type="text" name="txtTelepon" size="50" />
+<br>
+<div class="check_box">
+<p>Hobi :</p>
+<input type="checkbox" name="hobi" value="Bermain_Game">Bermain Game<br>
+<input type="checkbox" name="hobi" value="Berenang">Berenang<br>
+<input type="checkbox" name="hobi" value="Judol">Judol<br>
+<br>
+<label for="jurusan">Jurusan</label>
+<select id="jurusan" name="jurusan">
+<option value="PPLG">PPLG</option>
+<option value="TJKT">TJKT</option>
+<option value="ULW">ULW</option>
+<option value="MPLB">MPLB</option>
+<option value="AKL">AKL</option>
+<option value="BDR">BDR</option>
+</select>
+<br>
+<p>Motivasi :</p>
+<textarea name="motivasi" id="motivasi" name="motivasi" rows="4" cols="50"placeholder="Beri motivasi Anda..."></textarea>
+</div>
+        <p><input type="submit" value="Submit"><input type="reset" value="reset"></p>
+        <button>Kiri</button><button>Kanan</button>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
